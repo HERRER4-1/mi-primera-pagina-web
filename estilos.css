@@ -1,0 +1,63 @@
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+}
+
+body {
+	background-size: cover;
+	color: #ccc;
+}
+
+.wrap{
+	width: 50%;
+	max-width: 1000px;
+	margin:left; /*esto centra el reloj o lo coloca donde quieras pue*/
+}
+
+.widget {
+	width: 45%;
+	margin: 1.5em;
+	/*margin:32px;*/ /*esto es lo mismo a margin: 2em (2 em son 32px)*/
+}
+
+.widget p {
+	display: inline-block;
+	line-height: 1em;
+	color: #808080;
+}
+
+.fecha {
+	font-family: Oswald, Arial;
+	text-align: center;
+	padding: 7px;
+	font-size: 1.9em;
+	margin-bottom: 0.3125rem;
+	/*margin-bottom: 5px;*/
+	background: rgba(0,0,0,.5);
+	width: 100%;
+	border-radius: 10px;
+	border: 3px solid #424242;
+	box-shadow: 0 0 20px #808080; /*le da efecto resplandor (luz) al fondo*/
+}
+
+.reloj {
+	font-family: Oswald, Arial;
+	width: 100%;
+	padding: 15px;
+	font-size: 55px;
+	text-align: center;
+	background: rgba(0,0,0,.5);
+	border-radius: 20px;
+	border:4px solid #424242; /*Le agrega un marco (borde) a la caja (reloj), y el "solid" cambia el color del borde*/
+	box-shadow: 0 2px 17px #808080;
+}
+
+.reloj .caja-segundos {
+	display: inline-block;
+}
+
+.reloj .ampm,
+.reloj .segundos {
+	font-size: 2rem;
+	display: block;
+}
